@@ -40,5 +40,65 @@ from ..model_cache import get_preds  # noqa: F401
 
 
 def run(ds, cfg, preds=None):
-    # TODO
-    raise NotImplementedError("check second_opinion chưa làm")
+    preds = get_preds(ds, cfg, "checker") if preds is None else preds
+    settings = cfg["second_opinion"]
+    issues = []
+    for image_path in ds.image_files():
+        stem = image_path.stem
+        if stem not in preds or not ds.label_path(stem).exists():
+            continue
+        size = ds.image_size(stem)
+        if not size:
+            continue
+        width, height = size
+        raw_lines = ds.read_label_lines(stem) or []
+        valid = []
+        for line_no, text in raw_lines:
+            try:
+                cls, cx, cy, w, h = parse_yolo_line(text)
+            except ValueError:
+                continue
+            if 0 <= cls < len(ds.classes) and w > 0 and h > 0:
+                valid.append((line_no, cls, (cx, cy, w, h)))
+        accepted = []
+        fp_eligible = []
+        for row in preds[stem]:
+            try:
+                cls, conf, cx, cy, w, h = row
+                cls, conf = int(cls), float(conf)
+                box = (float(cx), float(cy), float(w), float(h))
+            except (TypeError, ValueError):
+                continue
+            if not (0 <= cls < len(ds.classes)) or box[2] <= 0 or box[3] <= 0:
+                continue
+            if conf >= settings["fp_conf"]:
+                fp_eligible.append((conf, box))
+            area = box[2] * width * box[3] * height
+            if conf >= settings["conf"] and area >= settings["min_area_px"]:
+                accepted.append((cls, conf, box))
+
+        for cls, conf, box in accepted:
+            cands = [(iou_xywh(box, label_box), label_cls) for _, label_cls, label_box in valid
+                     if iou_xywh(box, label_box) >= settings["iou_missing"]]
+            code = None
+            extra = {"conf": conf}
+            if not cands:
+                code = "POSSIBLE_MISSING"
+            else:
+                same = [iou for iou, label_cls in cands if label_cls == cls]
+                other = [iou for iou, label_cls in cands if label_cls != cls]
+                if same and max(same) < settings["iou_loose"]:
+                    code = "POSSIBLE_LOOSE_BOX"
+                    extra["iou"] = max(same)
+                elif not same and other and max(other) >= settings["iou_match"]:
+                    code = "POSSIBLE_WRONG_CLASS"
+                    extra["iou"] = max(other)
+            if code:
+                issues.append(Issue("second_opinion", WARN, code, stem, "model đưa ra khác biệt cần người duyệt", extra=extra))
+
+        for line_no, _, label_box in valid:
+            if all(iou_xywh(label_box, box) < settings["iou_missing"] for conf, box in fp_eligible):
+                issues.append(Issue("second_opinion", WARN, "POSSIBLE_FALSE_POS", stem,
+                                    "nhãn không khớp dự đoán model; cần người duyệt", line_no,
+                                    {"iou": max((iou_xywh(label_box, box) for _, box in fp_eligible), default=0.0)}))
+    return issues
