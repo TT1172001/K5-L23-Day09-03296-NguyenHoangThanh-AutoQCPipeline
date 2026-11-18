@@ -1,0 +1,171 @@
+# Danh sách lỗi — SAU sửa tự động (v2)
+ảnh đã quét: 202
+
+label_format -> 10 dòng
+missing_labels -> 21 dòng
+second_opinion -> 123 dòng
+
+[ERROR] MISSING_LABEL_FILE   img_0031  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0053  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0126  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0135  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0170  ảnh không có file nhãn
+[ERROR] MISSING_LABEL_FILE   img_0219  ảnh không có file nhãn
+[WARN ] BOX_HUGE             img_0018.txt:1  box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0128.txt:1  box chiếm diện tích quá lớn
+[WARN ] BOX_HUGE             img_0196.txt:1  box chiếm diện tích quá lớn
+[WARN ] BOX_TINY             img_0026.txt:6  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0030.txt:9  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0051.txt:5  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0069.txt:2  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0161.txt:2  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0161.txt:3  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] BOX_TINY             img_0161.txt:4  cạnh ngắn của box nhỏ hơn ngưỡng px
+[WARN ] EMPTY_LABEL          img_0004  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0013  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0050  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0057  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0065  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0097  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0103  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0104  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0129  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0147  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0157  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0178  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0184  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0192  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] EMPTY_LABEL          img_0194  file nhãn rỗng: ảnh nền hay thiếu nhãn?
+[WARN ] POSSIBLE_FALSE_POS   img_0024.txt:7  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0030.txt:9  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0035.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0068.txt:7  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0069.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0070.txt:6  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0078.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0091.txt:7  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0092.txt:9  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0095.txt:6  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0099.txt:14  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0100.txt:4  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0111.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0144.txt:1  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0149.txt:3  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0150.txt:3  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0155.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0155.txt:3  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0177.txt:2  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0180.txt:5  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0189.txt:4  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0193.txt:6  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0204.txt:1  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_FALSE_POS   img_0206.txt:1  nhãn không khớp dự đoán model; cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0015  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0018  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0036  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0038  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0045  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0046  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0054  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0062  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0062  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0064  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0077  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0082  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0090  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0094  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0096  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0119  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0125  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0127  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0127  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0131  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0142  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0171  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0171  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0175  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0179  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0200  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0217  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_LOOSE_BOX   img_0217  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0001  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0004  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0004  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0012  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0014  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0020  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0022  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0028  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0030  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0032  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0047  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0050  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0057  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0058  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0065  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0066  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0067  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0068  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0078  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0086  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0092  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0093  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0096  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0099  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0100  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0103  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0104  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0116  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0117  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0121  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0127  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0131  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0134  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0144  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0145  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0147  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0151  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0157  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0159  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0160  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0164  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0165  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0178  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0184  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0187  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0194  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0199  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0204  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0210  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0211  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0215  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0218  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_MISSING     img_0220  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0019  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0020  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0021  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0034  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0037  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0070  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0071  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0075  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0083  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0112  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0124  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0160  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0183  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0185  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0191  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0202  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0208  model đưa ra khác biệt cần người duyệt
+[WARN ] POSSIBLE_WRONG_CLASS img_0212  model đưa ra khác biệt cần người duyệt
+
+## Tổng hợp theo mã
+error MISSING_LABEL_FILE     6
+warn  BOX_HUGE               3
+warn  BOX_TINY               7
+warn  EMPTY_LABEL            15
+warn  POSSIBLE_FALSE_POS     24
+warn  POSSIBLE_LOOSE_BOX     28
+warn  POSSIBLE_MISSING       53
+warn  POSSIBLE_WRONG_CLASS   18
